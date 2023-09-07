@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+
+<button id="btn" class="hide">Hide</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$(".hide").click(function(){
+  if($("#btn").html()=='Hide') {
+   $("#demo").hide(1000);
+    $("#btn").html('Show');
+  }
+  else {
+   $("#demo").show(1000); 
+   $("#btn").html('Hide');
+  }
+});
+});
+</script>
+
+
+</body>
+</html>
